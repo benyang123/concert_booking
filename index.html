@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <link rel="shortcut icon" href="./assets/pic/pic2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="./assets/css/timeline.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>global concert</title>
+</head>
+
+<body>
+    <!--loading动画-->
+    <div id="loading">
+        <div id="loadingBox">
+            <div id="loadingContent">
+                <div class="object" id="objectFour"></div>
+                <div class="object" id="objectThree"></div>
+                <div class="object" id="objectTwo"></div>
+                <div class="object" id="objectOne"></div>
+            </div>
+            <div id="wait">
+                <h2>waiting...</h2>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="source">
+        <!--顶部栏 -->
+        <div id="topBarPc" data-am-scrollspynav="{offsetTop: 1}">
+            <nav class="scrollspy-nav" >
+                <ul>
+                    <li class="left">
+                        <a href="#introduce">introduct</a>
+                    </li>
+                    <li class="left">
+                        <a href="#reporter">Jay Chou</a>
+                    </li>
+                    <li class="left">
+                        <a href="#art">Eason</a>
+                    </li>
+                    <li id="logoTop">
+                        <img title="点我回顶部！" data-am-smooth-scroll id="logoPic" src="./assets/pic/piano.jpg" alt="logo" class="am-img-thumbnail am-circle">
+                    </li>
+                    <li class="right" id="firstRight" >
+                        <a href="register.php">Rigister</a>
+                    </li>
+                    <li class="right">
+                        <a href="login.php">Login</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="top">
+            <div class="am-container">
+                <div class="am-animation-slide-left am-animation-delay-1.8">
+                    <img class="am-img-responsive" src="./assets/pic/pic2.png" alt="mascot-xiaoMeng" />
+                </div>
+                <div id="indexRight" class="am-animation-slide-right am-animation-delay-2.0">
+                    <div id="indexHeader">
+                        <h1>
+                            Welcome to..
+                        </h1>
+                        <h2>
+
+                        </h2>
+                    </div>
+                    <div id="indexQR">
+                        <button id="weixinButton" class="am-btn am-btn-success am-round">
+                            <i class="am-icon-weixin"></i>
+                            wechat
+                        </button>
+                        <button id="weiboButton" class="am-btn am-btn-danger am-round">
+                            <i class="am-icon-weibo"></i>
+                            blog
+                        </button>
+                        <button id="qqButton" class="am-btn am-btn-primary am-round">
+                            <i class="am-icon-qq"></i>
+                            QQ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="am-modal am-modal-no-btn" tabindex="-1" id="weixinModel">
+            <div class="am-modal-dialog">
+                <div class="am-modal-hd">wechat
+                    <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                </div>
+                <div class="am-modal-bd">
+                    <img src="./assets/pic/weixin2.jpg" />
+                </div>
+            </div>
+        </div>
+
+        <div class="am-modal am-modal-no-btn" tabindex="-1" id="weiboModel">
+            <div class="am-modal-dialog">
+                <div class="am-modal-hd">blog
+                    <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                </div>
+                <div class="am-modal-bd">
+                    <img src="./assets/pic/weibo2.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="am-modal am-modal-no-btn" tabindex="-1" id="qqModel">
+            <div class="am-modal-dialog">
+                <div class="am-modal-hd">QQ
+                    <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                </div>
+                <div class="am-modal-bd">
+                    <img src="./assets/pic/qq2.png" />
+                </div>
+            </div>
+        </div>
+        <!--正文-->
+        <div id="contentBox" class="am-container">
+            <div id="introduce">
+                <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+                    <h2 class="am-titlebar-title ">
+                        <i class="am-icon-clipboard"></i> introduct
+                    </h2>
+                </div>
+                <h2>
+                    about
+                </h2>
+                <hr data-am-widget="divider" class="am-divider am-divider-default" />
+                <p>
+                    Here are the most popular concerts recently and you can book seats online here.
+                </p>
+                <h2>
+                    Future concert
+                </h2>
+                <hr data-am-widget="divider" class="am-divider am-divider-default" />
+                <div class="am-container" style="margin-top:1em;">
+                    <div class="am-g">
+                        <div class="am-u-md-12">
+                            <div class="Article">
+                                <dl>
+                                    <dt>
+                                        <i class="am-icon-calendar"></i> 2018.1</dt>
+                                    <dd class="pos-left am-cf">
+                                        <div class="circle">
+                                        </div>
+                                        <div class="concent" data-am-scrollspy="{animation: 'slide-left'}">
+                                            <div class="concent-header">Nanjing</div>
+                                            <div class="concent-body">
+                                                <div class="am-g">
+                                                    <div class="concent-desc">
+                                                        Jay Chou will hold a concert at Nanjing Olympic Stadium.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="articlePhoto photoRight" data-am-scrollspy="{animation: 'slide-right'}">
+                                            <img class="am-img-thumbnail am-radius am-img-responsive" src="./assets/pic/zhouj.jpg" />
+                                        </div>
+                                    </dd>
+                                    <dt>
+                                        <i class="am-icon-calendar"></i> 2018.3</dt>
+                                    <dd class="pos-right am-cf">
+                                        <div class="circle"></div>
+                                        <div class="concent" data-am-scrollspy="{animation: 'slide-right'}">
+                                            <div class="concent-header">Beijing</div>
+                                            <div class="concent-body">
+                                                <div class="am-g">
+                                                    <div class="concent-desc">
+                                                        Eason will hold a concert in Wukesong, Beijing.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="articlePhoto photoLeft" data-am-scrollspy="{animation: 'slide-left'}">
+                                            <img class="am-img-thumbnail am-radius am-img-responsive" src="./assets/pic/eason.jpg" />
+                                        </div>
+                                    </dd>
+                                    <dt>
+                                        <i class="am-icon-calendar"></i> 2018.5</dt>
+                                    <dd class="pos-left am-cf">
+                                        <div class="circle"></div>
+                                        <div class="concent" data-am-scrollspy="{animation: 'slide-left'}">
+                                            <div class="concent-header">Shanghai</div>
+                                            <div class="concent-body">
+                                                <div class="am-g">
+                                                    <div class="concent-desc">
+                                                        JJ will hold a concert in Shanghai.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="articlePhoto photoRight" data-am-scrollspy="{animation: 'slide-right'}">
+                                            <img class="am-img-thumbnail am-radius am-img-responsive" src="./assets/pic/jj.jpg" />
+                                        </div>
+                                    </dd>
+                                    <dt>
+                                        <i class="am-icon-calendar"></i> 2018.6</dt>
+                                    <dd class="pos-right am-cf">
+                                        <div class="circle"></div>
+                                        <div class="concent" data-am-scrollspy="{animation: 'slide-right'}">
+                                            <div class="concent-header">Los Angeles</div>
+                                            <div class="concent-body">
+                                                <div class="am-g">
+                                                    <div class="concent-desc">
+                                                        Taylor Swift will hold a concert in Los Angeles.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="articlePhoto photoLeft" data-am-scrollspy="{animation: 'slide-left'}">
+                                            <img class="am-img-thumbnail am-radius am-img-responsive" src="./assets/pic/taylor.jpg" />
+                                        </div>
+                                    </dd>
+                                    <dt>now</dt>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        <!--手机端回到顶部按钮-->
+        <div id="goTop" style="display:none">
+            <img title="点我回顶部！" data-am-smooth-scroll id="logoPicPhone" src="./assets/pic/LOGO.png" alt="logo" class="am-img-thumbnail am-circle">
+        </div>
+
+        <footer>
+            Copyright ©
+            <span>yb</span> |
+            <span>njupt</span> All Rights Reserved
+        </footer>
+
+
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/amazeui.min.js"></script>
+        <script src="./js/main.js"></script>
+</body>
+
+</html>
